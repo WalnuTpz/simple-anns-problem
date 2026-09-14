@@ -1,0 +1,14 @@
+# Build products
+/build/
+/cmake-build-*/
+
+# Downloaded datasets, generated indexes, and local experiment logs
+/data/*
+!/data/README.md
+/indexes/
+/results/
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.DS_Store

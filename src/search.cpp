@@ -127,7 +127,7 @@ int main(int argc, char **argv) {
     auto t1 = chrono::high_resolution_clock::now();
     tot_time = chrono::duration<double>(t1 - t0).count();
     cout << "QPS: " << q / tot_time << "\n";
-    cout << "Recall@100:" << (correct * 100.0 / (q * k)) << "%\n";
+    cout << "Recall@" << k << ": " << (correct * 100.0 / (q * k)) << "%\n";
 
     delete[] points;
     delete[] truths;
